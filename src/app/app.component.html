@@ -1,0 +1,26 @@
+<h1>Revisões práticas</h1>
+
+
+<nav>
+  <ul>
+    <li>
+      <a href="#" [routerLink] = "['/lista']" >-Home-</a>
+    </li>
+    <li>
+      <a href="#"  [routerLink] = "['/dummy-demo',title]">-Dummy-</a>
+    </li>
+    <li>
+      <a href="#" [routerLink] = "['/dummy-demo']" 
+      [queryParams]="{xpto: 'buuu'}"
+      >-Lista-</a>
+    </li>
+  </ul>
+</nav>
+<p>
+  Abaixo a lista telefonica de um determinado sujeito
+</p>
+
+<!--
+<app-listpersonalcontacts [owner]="'Alex'"></app-listpersonalcontacts>
+-->
+<router-outlet></router-outlet>

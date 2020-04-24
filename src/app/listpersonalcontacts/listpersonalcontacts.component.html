@@ -1,0 +1,19 @@
+
+<h2>Lista de contactos de  {{owner}}</h2>
+
+
+
+<section *ngIf="selectedContact">
+    <app-contacts [innerContact]="selectedContact"></app-contacts>
+</section>
+
+
+<ul>
+    <li *ngFor="let ct of allContacts">
+        <h3>contacto <a href="#" [routerLink]="['/contacto',ct.name]"> {{ct.name}} </a></h3>        
+
+    </li>
+
+</ul>
+
+
