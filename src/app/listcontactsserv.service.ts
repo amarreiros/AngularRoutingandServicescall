@@ -27,4 +27,9 @@ export class ListcontactsservService {
 
     return ct[0];
   }
+
+  
+  addContact(ct:Contact){
+   this.lista.push(ct); 
+  }
 }

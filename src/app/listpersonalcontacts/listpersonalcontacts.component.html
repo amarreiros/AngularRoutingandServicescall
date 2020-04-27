@@ -1,8 +1,7 @@
 
 <h2>Lista de contactos de  {{owner}}</h2>
 
-
-
+<input type="text" [(ngModel)]='owner' />
 <section *ngIf="selectedContact">
     <app-contacts [innerContact]="selectedContact"></app-contacts>
 </section>
@@ -16,4 +15,5 @@
 
 </ul>
 
+<a href="#" (click)='addContact()' >add</a>
 

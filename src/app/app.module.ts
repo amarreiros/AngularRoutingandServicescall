@@ -7,6 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { DummyComponent } from './dummy/dummy.component';
 import { Gallery } from './gallery/gallery.component';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,13 @@ import {HttpClientModule} from '@angular/common/http';
     ListpersonalcontactsComponent,
     ContactsComponent,
     DummyComponent,
-    Gallery
+    Gallery,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

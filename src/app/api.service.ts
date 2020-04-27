@@ -16,4 +16,5 @@ export class ApiService {
   getAll(){ //typically called fetchData
     return this.client.get(this.serverUrl);
   }
+
 }
